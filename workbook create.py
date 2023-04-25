@@ -10,10 +10,9 @@ workbook = openpyxl.load_workbook("Master Data.xlsx")
 
 #%%
 for worksheet in worksheetname:
-    if workbook.sheetnames[worksheet]==False:
         workbook.create_sheet(worksheet)
+
 
 
 # %%
 workbook.save("Master Data.xlsx")
-# %%
