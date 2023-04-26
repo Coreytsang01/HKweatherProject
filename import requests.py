@@ -67,9 +67,9 @@ for i in date:
     x2 = ''.join(x1)
     print(x2)
     final_combine_df['Date time'] = final_combine_df['Date time'].replace(to_replace=i, value=x2)
-print(final_combine_df["Date time"])
-# print(final_combine_df)
-# final_combine_df.to_excel("test.xlsx", index = False )
+
+print(final_combine_df)
+final_combine_df.to_excel("test.xlsx", index = False )
 
 
 # %%
@@ -79,7 +79,7 @@ combine_excel = pd.read_excel('test.xlsx', index_col='Automatic Weather Station'
 workbook_Master = openpyxl.load_workbook('Master Data.xlsx')
 #print(combine_excel)
 
-# number of station location: 39
+# number of station: 39
 Station_location = [
 "Chek Lap Kok","Cheung Chau","Clear Water Bay",
 "Happy Valley","HK Observatory","HK Park",
@@ -96,6 +96,6 @@ Station_location = [
 "Wong Chuk Hang","Wong Tai Sin","Yuen Long Park"
 ]
 workbook_Master = openpyxl.load_workbook('Master Data.xlsx')
-for i in range(38):
-    if 
+# for i in range(38):
+#     if 
 # %%
