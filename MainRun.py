@@ -76,7 +76,7 @@ final_combine_df.to_excel("test.xlsx", index = False )
 
 print('Finished combining and cleaning the files.')
 process_time = round(time.time() - start_time - download_time, 2)
-print("It uses %s seconds to execute in downloading stage." % process_time)
+print("It uses %s seconds to execute in combining file stage." % process_time)
 ## %%=====================================================================================================
 
 # Insert data into master data.xlsx
