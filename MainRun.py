@@ -72,7 +72,7 @@ final_combine_df = final_combine_df.rename(columns={
                                     '10-Minute Maximum Gust(km/hour)':'Maxiumn Gust (km/h)'
                                     })
 #print(final_combine_df)
-final_combine_df.to_excel("test.xlsx", index = False )
+final_combine_df.to_excel("tempdata.xlsx", index = False )
 
 print('Finished combining and cleaning the files.')
 process_time = round(time.time() - start_time - download_time, 2)
@@ -81,7 +81,7 @@ print("It uses %s seconds to execute in combining file stage." % process_time)
 
 # Insert data into master data.xlsx
 
-combine_excel_df = pd.read_excel('test.xlsx')
+combine_excel_df = pd.read_excel('tempdata.xlsx')
 workbook_Master = openpyxl.load_workbook('Master Data.xlsx')
 #print(combine_excel)
 
