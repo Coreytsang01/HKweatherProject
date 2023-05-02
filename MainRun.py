@@ -129,7 +129,7 @@ print('Finished transforming the data from temporary files to Master Data.xlsx')
 transforming_time = round(time.time() - start_time - download_time - process_time, 2)
 print("It uses %s seconds to execute in transforming stage." % transforming_time)
 
-
+# This is for Task Scheduler work log
 # Get Now time
 now = datetime.datetime.now()
 currentTime = now.strftime("%m/%d/%Y, %H:%M:%S")
