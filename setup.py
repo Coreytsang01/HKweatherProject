@@ -1,13 +1,10 @@
 ## %% import module and define variable ===========================================
 import openpyxl
-from openpyxl.utils import get_column_letter
-from openpyxl.worksheet.table import Table, TableStyleInfo
 import os
 import pandas as pd
 worksheetname = ["Chek Lap Kok","Cheung Chau","Clear Water Bay","Happy Valley","HK Observatory","HK Park","Kai Tak Runway Park","Kau Sai Chau","King's Park","Kowloon City","Kwun Tong","Lau Fau Shan","Ngong Ping","Pak Tam Chung","Peng Chau","Sai Kung","Sha Tin","Sham Shui Po","Shau Kei Wan","Shek Kong","Sheung Shui","Stanley","Ta Kwu Ling","Tai Lung","Tai Mei Tuk","Tai Mo Shan","Tai Po","Tate's Cairn","The Peak","Tseung Kwan O","Tsing Yi","Tsuen Wan Ho Koon","Tsuen Wan Shing Mun Valley","Tuen Mun","Waglan Island","Wetland Park","Wong Chuk Hang","Wong Tai Sin","Yuen Long Park",
 ]
-tablename = ["ChekLapKok","CheungChau","ClearWaterBay","HappyValley","HKObservatory","HKPark","KaiTakRunwayPark","KauSaiChau","KingsPark","KowloonCity","KwunTong","LauFauShan","NgongPing","PakTamChung","PengChau","SaiKung","ShaTin","ShamShuiPo","ShauKeiWan","ShekKong","SheungShui","Stanley","TaKwuLing","TaiLung","TaiMeiTuk","TaiMoShan","TaiPo","TatesCairn","ThePeak","TseungKwanO","TsingYi","TsuenWanHoKoon","TsuenWanShingMunValley","TuenMun","WaglanIsland","WetlandPark","WongChukHang","WongTaiSin","YuenLongPark",
-]
+
 check_file_exist = 'Master Data.xlsx'
 check_folder_exist = 'Temp file'
 column_df = pd.DataFrame(columns=[
