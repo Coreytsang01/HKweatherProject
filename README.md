@@ -15,7 +15,12 @@ pip install -r requirements.txt
 6. Run `mainRun.py` to see whether it can download and clean the data, importing into `Master Data.xlsx`
 
 # Task Scheduler Setup
-if you would like to run the program from time to time automatically, it is recommanded to create a `.bat` to be run in Task Scheduler because the python file cannot be run directly in Task Scheduler.
+if you would like to run the program from time to time automatically, it is recommanded to create a `.bat` to be run in Task Scheduler because the python file cannot be run directly in Task Scheduler. The `bat` has been uploaded. However, there are two lines that need to be amended. It needs to be revised as your python virtual environment and also the file directory. 
+**i.e.**
+```bash
+cd /d F:\python\001_ObservatoryProject
+call activate coreypy3_9
+```
 
 Please follow these instructions to setup.
 1. Open the Task Scheduler
