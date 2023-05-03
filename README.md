@@ -15,7 +15,7 @@ pip install -r requirements.txt
 6. Run `mainRun.py` to see whether it can download and clean the data, importing into `Master Data.xlsx`
 
 # Task Scheduler Setup
-if you would like to run the program from time to time automatically, it is recommanded to create a `.bat` to be run in Task Scheduler because the python file cannot be run directly in Task Scheduler. The `.bat` has been uploaded that you can refer to it and make your own one. However, there are two lines that need to be amended. It needs to be revised as your python virtual environment and also the file directory. 
+if you would like to run the program from time to time automatically, it is recommanded to create a `.bat` to be run in Task Scheduler because the python file cannot be run directly in Task Scheduler. The `.bat` has been uploaded that you can refer to it and make your own one. However, there are two lines refered to your local machine. It needs to be revised as your python virtual environment and also the file directory. 
 **i.e.**
 ```bash
 cd /d F:\python\001_ObservatoryProject
